@@ -1,0 +1,76 @@
+<!-- Your form should meet these specific requirements:
+All fields should use HTML5 required attribute
+The submit button should read 'Register'
+use <div> element to wrap all form-related elements.  -->
+
+<!-- Now that you now how to manage dimensions and margins, revise your Register page to meet the style requirements. 
+
+form labels should be aligned (vertical-align) to the top of associated <input> elements
+Add padding to each <input> to provide white space between the input boundaries and contained text
+Form elements should be side-by-side; you can float elements if needed. You should end up with 2 columns of input elements. 
+     -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>HTML Forms 2</title>
+        <link rel="stylesheet" href="register.css" type="text/css" />
+    </head>
+    <body>
+        <h1>FOODAR</h1>
+        <h2>Register</h2>
+
+        <h4>Please fill out the form below:</h4>
+        <h4>Details:</h4>
+        <div container="form">
+        <form>
+            <fieldset>
+                <legend>User Credentials</legend>
+                <label>First Name: <input type ="text" name="firstname"/>
+                <label>Last Name: <input type ="text" name="lastname"/>
+                </label><br><br/>
+                <label>Email: <input type ="text" name="email"/>
+                </label>
+                <label>Password: <input type ="text" name="password"/>
+                </label>
+            </fieldset>
+        
+            <h4>Address:</h4>
+            <fieldset>
+              <legend>User Address</legend>
+              <label for="street" />Street</label>
+              <input id="street" name="address-1" type="text" />
+           <label for="city" />City </label>
+           <input id="city" name="addess-2" type="text" />
+           <br><br/>
+           <label for="state" />State</label>
+           <select id="state" name="state">
+            <option value="VA">VA</option>
+            <option value="MD">MD</option>
+            <option value="NC">NC</option>
+            <option value="NY">NY</option>
+            </select>
+           
+        <label for="zipcode" />Zip Code</label>
+        <input id="zipcode" name="address-4" type="text" maxlength="5"/>
+          </fieldset>
+        </form>
+        </div>
+        <br></br>
+        <button>Register</button><br></br>
+        <footer>
+            <p>Sadric Bonner: <a href="mailto:sccontactme@gmail.com">Email</a></p>
+            <p>&copy; 2020<p></p>
+          </footer>
+    </body>
+    </html> 
+
+
+    <!-- An additional requirement that we've received is to add a <footer> to the page. 
+
+        You should update both the About page and the Register page to have a footer that meets the following:
+        
+        Use the <footer> element to hold information pertaining to the footer
+        include a vertical navigational list of other pages
+        include copyright information
+        use &copy; to render the copyright symbol -->
